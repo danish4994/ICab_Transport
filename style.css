@@ -66,7 +66,26 @@ span{
 
 /* navbar end here */
 
-
+/* home indicators part start from here */
+.home-indigators{
+  width: 40px;
+  height: 40px;
+  background-color: #086DB3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  position: relative;
+  top: 650px;
+  right: 0;
+  position: fixed;
+  z-index: 111;
+}
+.home-indigators a ,i{
+  font-size: 30px;
+  color: white;
+}
+/* End here */
 
 /* #carousel part start from here */
 #carousel .content{
@@ -242,6 +261,7 @@ carousel-control-next-icon{
   background-size: cover;
   background-position: center;
   padding: 0;
+  background-attachment: fixed;
   
 }
 .dark-bb{
@@ -348,7 +368,7 @@ carousel-control-next-icon{
 #btm-part h6{
   padding: 20px 0px;
   color: #fff;
-  text-align: center;
+  
 }
 
 
@@ -370,5 +390,8 @@ carousel-control-next-icon{
   }
   #card p{
     font-size: 17px;
+  }
+  #btm-part h6{
+    text-align: center;
   }
 }
