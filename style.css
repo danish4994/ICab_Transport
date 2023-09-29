@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+}
+
+span{
+  color: #18496B;
+}
+.color2{
+  color: #FFFF00;
+}
+
+#top-message{
+    width: 100%;
+    height: 100%;
+    background-color: #18496B;
+}
+#top-message p{
+    font-size: 14px;
+    margin: 0px;
+    padding: 8px 0px;
+    text-wrap: nowrap;
+}
+#hover i{
+    font-size: 14px;
+    transition: 0.8s;
+    padding: 10px 0px;
+}
+#hover i:hover{
+    color: #006DB7;
+
+}
+
+
+/* topbar end here */
+
+#navbar ul li a{
+    /* color: black !important; */
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.navbar ul li .dropdown-menu{
+  transition: all 300ms ease !important;
+}
+
+.dropdown-menu{
+    --bs-dropdown-link-hover-bg: transparent;
+    --bs-dropdown-border-radius: 10px;
+    --bs-dropdown-min-width: 15rem;
+    padding:10px;
+    height: 235px;
+    display: none;
+}
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+.dropdown-menu a{
+    transition: 0.8s;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.489);
+}
+.dropdown-menu a:hover{
+    color: #223A96 !important;
+}
+
+/* navbar end here */
+
+
+
+/* #carousel part start from here */
+#carousel .content{
+  margin-left: 20px;
+}
+#carousel h1{
+    color: #006DB7;
+    text-wrap: nowrap;
+	  animation: slide-in-top 0.5s ease-in-out 0.8s both;
+    
+}
+#carousel h5{
+    font-weight: 350 !important;
+    line-height: 30px;
+    animation: slide-in-right 0.5s ease-in-out 0.4s both;
+}
+
+#btn{
+    background-color: #002147;
+    padding: 17px 35px;
+    color: #fff;
+    font-weight: 600;
+    animation: slide-in-bottom 0.5s ease-in-out 0.8s both;
+    transition: 1s;
+}
+#carousel .btn:hover{
+  background-color: #006DB7 !important;
+}
+#carousel img{
+  animation: opacity 1s ease-in-out 0.5s both;
+}
+.carousel-control-prev{
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 240px;
+}
+.carousel-control-next{
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 240px;
+}
+carousel-control-next-icon{
+  width: 20px !important;
+  height: 15px !important;
+  font-size: 15px;
+}
+  @keyframes opacity {
+  0%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 1;
+  }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+              transform: translateY(300px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+              transform: translateY(-200px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+/* #carousel part end from here */
+
+#welcome-msg h3{
+  font-weight: 700 !important;
+}
+
+.blue{
+  background-color: #18496B;
+  width: 80px ;
+  height: 2px;
+}
+.orange{
+  background-color: #FC721E;
+  width: 80px;
+  height: 2px;
+}
+.light-blue{
+  background-color: #006DB7;
+  width: 80px;
+  height: 2px;
+}
+#welcome-msg p{
+  text-align: justify;
+}
+
+
+/* welcome part end here */
+
+#card{
+  background-image: url(assets/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+}
+.bgdark {
+  background-color: rgba(0, 0, 0, 0.822);
+  width: 100%;
+  height: 100%;
+}
+
+#card h5{
+  font-weight: 700;
+}
+#card p{
+  font-size: 14px;
+}
+
+/* card part end here */
+
+#form input{
+  border:none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.518);
+}
+#form textarea{
+  border:none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.507);
+  height: 150px;
+  resize: none;
+}
+#form i{
+  position: relative;
+  top: 13px;
+  right: 10px;
+  color: rgba(0, 0, 0, 0.722)
+}
+
+#btnn{
+  padding: 10px 20px;
+  background-color: #006DB7;
+  border-radius: 3px;
+  color: #fff;
+  transition: 1s;
+}
+#btnn:hover{
+  background-color: #333333;
+}
+
+
+/* form part end here */
+
+#archivement{
+  background: url(assets/Transportation.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  
+}
+.dark-bb{
+  background-color: rgba(0, 0, 0, 0.781);
+}
+
+#archivement i{
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+/* this part end here */
+
+#our-process i{
+  font-size: 50px;
+  color: #006DB7;
+}
+#our-process h6{
+  text-align: center;
+  margin-top: 20px;
+}
+.icon{
+  margin: auto;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #C1C4C7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon:hover{
+  background-color: #006DB7;
+}
+.icon:hover  i{
+  color: #fff !important;
+}
+
+/* our process part end here */
+
+#special{
+  background-color: #18496B;
+  padding: 0px;
+}
+#special h3{
+  color: #fff;
+}
+.colapse p{
+  padding: 10px 10px;
+  text-align: start;
+}
+
+/* special parts end here */
+
+/* Review Part Start from here */
+#review h6{
+  color: #006DB7;
+  font-weight: 700 !important;
+}
+#review .carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+/* review part end head */
+
+/* footer part start from here */
+
+#footer{
+  background-color: #1B2C3E;
+}
+#footer h5{
+  padding-bottom: 10px;
+
+}
+
+#footer p{
+  color:#fff;
+  text-align: justify;
+  line-height: 30px;
+  font-size: 15px;
+}
+#footer i{
+  color: #fff;
+  line-height: 35px;
+}
+
+#footer a{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.8s;
+}
+#footer a:hover{
+  transform: rotate(360deg) !important;
+  color: #086DB3;
+}
+
+#btm-part{
+  background-color: #172737;
+}
+#btm-part h6{
+  padding: 20px 0px;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+
+@media (max-width:768px){
+  #our-process .col-6{
+    margin: 0px 0px !important;
+    width: 100%;
+  }
+  #form .col-6{
+    margin: 0px 0px !important;
+    width: 100%;
+  }
+  #card .col-9{
+    margin: 0px 0px !important;
+    width: 100%;
+  }
+  #card p{
+    font-size: 17px;
+  }
+}
