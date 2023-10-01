@@ -413,5 +413,8 @@ form select {
   .breadcrumb{
     justify-content: start !important;
   }
+  #hover .text-end{
+    text-align: center !important;
+  }
 }
 
