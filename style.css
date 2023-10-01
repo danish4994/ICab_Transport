@@ -273,6 +273,15 @@ carousel-control-next-icon{
   padding-bottom: 20px;
 }
 
+
+form select {
+  padding: 8px !important;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.641);
+}
+
 /* this part end here */
 
 #our-process i{

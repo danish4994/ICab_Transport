@@ -20,15 +20,19 @@
     />
   </head>
   <style>
+    span {
+      color: #18496b;
+    }
     #breadcrumb {
-      background: url(assets/breadcrumb/lucid-f1fast-cover.webp);
+      background: url(assets/breadcrumb/contact.jpg);
+      background-size: cover;
       background-position: center;
       background-size: cover;
       padding: 0;
       color: white;
     }
     .blue-bg {
-      background-color: rgba(0, 0, 0, 0.723);
+      background-color: rgba(0, 0, 0, 0.749);
       width: 100%;
       height: 100%;
       padding: 30px 0px;
@@ -49,11 +53,40 @@
     .breadcrumb-item + .breadcrumb-item::before {
       color: #fff;
     }
-    #cars img{
-        margin: 10px;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-        width: 100% !important;
-        
+    .form {
+      background-color: #dcdbdb;
+    }
+    #form input,
+    select {
+      margin-bottom: 20px;
+      padding: 13px;
+    }
+    #btn2 {
+      margin-top: 20px;
+      background-color: #006db7;
+      color: #fff;
+      transition: 1s;
+    }
+    #btn2:hover {
+      background-color: #333333;
+    }
+    form select {
+      padding: 13px !important;
+      width: 100%;
+      border-radius: 10px;
+      border: none;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.641);
+    }
+    #form i{
+        position: relative;
+        top: 25px;
+        color: #006DB7;
+    }
+    #form p{
+        padding-left: 13px;
+    }
+    #adress{
+        margin: 0px 10px !important;
     }
   </style>
   <body>
@@ -158,12 +191,12 @@
         <div class="container">
           <div class="row mx-md-5">
             <div class="col-md-6">
-              <h3>Fleet</h3>
+              <h3>Contact Us</h3>
             </div>
             <div class="col-md-6">
               <nav class="breadcrumb d-flex justify-content-end">
                 <a class="breadcrumb-item" href="index.html">Home</a>
-                <p class="breadcrumb-item">Fleet</p>
+                <p class="breadcrumb-item">Contact Us</p>
               </nav>
             </div>
           </div>
@@ -171,72 +204,116 @@
       </div>
     </section>
 
-    <section class="container py-5">
+    <section class="container py-4" id="form">
       <div class="row mx-md-5">
-        <div class="col-12">
-          <p>
-            The service of iCabs that started with a handful cabs today boasts
-            of more than 300 registered cabs. The high number of taxis operating
-            across the city is cutting down the wait time for the passengers
-            thus helping them to reach their destination without any delays. Our
-            Fleet contains Indicab, Maruti Swift Dezire, Mahindra Xylo, Tata
-            Starbus EX, Indicab, Tata Bolt, Etios Liva, Maruti Swift Dezire,
-            Hyundai X Cent, Toyota Etios, Tata Zest, Honda Amaze, Mahindra Xylo,
-            Toyota Innova, Maruti Ertiga, Chevrolet Enjoy, Tata Winger, Swaraj
-            Mazda, Eicher, Ashok Leyland, Bharat Benz, Tata Starbus EX, and many
-            more.
-          </p>
+          <div class="col-md-8">
+            <h4 class="pb-4">Send a Message</h4>
+          <div class="form p-4">
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Email id"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="tel"
+                    name=""
+                    id=""
+                    placeholder="Phone No."
+                    class="form-control"
+                    maxlength="10"
+                    minlength="10"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <select name="Select Service" value="Select Service" id="">
+                    <option value="Select Services">Select Services</option>
+                    <option value="employees transportation">
+                      employees transportation
+                    </option>
+                    <option value="Corporate Car">Corporate Car</option>
+                    <option value="Airport Transfer">Airport Transfer</option>
+                    <option value="Monthly Rental">Monthly Rental</option>
+                    <option value="Enquiry">Enquiry</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Message"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+              <input
+                type="submit"
+                id="btn2"
+                value="Send Message"
+                class="form-control"
+              />
+            </form>
+          </div>
         </div>
+        <div class="col-md-4">
+            <div id="adress">
+                <h4>Contact Info</h4>
+            <div class="flex">
+                <i class="fa fa-map-marker"></i><p>
+                    iCabs Transport Solutions</p>
+                    <p>Flat No. 107, Lake view  Apartments, <br>
+                        Kondapur Road, Khanamet, <br>
+                        Kothaguda, Hyderabad, <br>
+                        Telangana. India - 500081</p>
+            </div>
+            <div class="flex">
+                <i class="fa fa-phone"></i><p>Office Support - +91 7007946281</p>
+                <p>Contact Number - +91 9506519510</p>
+            </div>
+            <div class="flex">
+                <i class="fa fa-envelope"></i><p>danish0ahmad@gmail.com</p>
+            </div>
+        </div>
+            </div>
       </div>
     </section>
 
-    <section class="container" id="cars">
-        <div class="row mx-md-5">
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/1.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/2.png" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/3.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/4.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/5.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/6.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/7.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/8.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/9.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/10.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/11.png" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/12.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/13.jpg" alt="">
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <img class="img-fluid" src="assets/cars/14.png" alt="">
-            </div>
-        </div>
+    <section class="container-fluid" id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.882311811992!2d78.37129157492093!3d17.46534610055502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93da74cb0733%3A0xf6570f11ef2ecbe3!2siCabs%20Transport%20Solutions!5e0!3m2!1sen!2sin!4v1696153270601!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
-
 
     <footer class="container-fluid py-4" id="footer">
       <div class="container">
