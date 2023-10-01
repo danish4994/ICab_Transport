@@ -404,3 +404,14 @@ form select {
     text-align: center;
   }
 }
+
+
+
+
+
+@media (max-width: 768px){
+  .breadcrumb{
+    justify-content: start !important;
+  }
+}
+
