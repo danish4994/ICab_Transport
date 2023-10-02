@@ -20,11 +20,12 @@
     />
   </head>
   <style>
-    span{
-        color: #18496B;
+    span {
+      color: #18496b;
     }
     #breadcrumb {
-      background: url(assets/breadcrumb/mac.jpg);
+      background: url(assets/breadcrumb/group.png);
+      background-position: center;
       background-size: cover;
       background-position: center;
       background-size: cover;
@@ -53,28 +54,66 @@
     .breadcrumb-item + .breadcrumb-item::before {
       color: #fff;
     }
-    .form{
-        background-color: #DCDBDB;
+    .aside-part {
+      background-color: #f1f1f1;
     }
-    #form input ,select{
-        margin-bottom: 20px;
-        padding: 13px;
+    .aside-part a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
     }
-    form select {
-      padding: 13px !important;
+    .aside-part a:nth-child(2) {
+      background-color: #006db7;
+      color: #fff;
+    }
+    .aside-part a:hover {
+      background-color: #006db7;
+      color: white;
+    }
+    .aside-part2 {
+      background-color: #f1f1f1;
+    }
+    .aside-part2 a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
+      background-color: #006db7;
+      color: #fff;
+    }
+    .aside-part2 input,
+    textarea,
+    button {
+      margin: 10px 0px;
+      padding: 10px 10px;
+    }
+
+    .aside-part2 select {
       width: 100%;
-      border-radius: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      outline: none;
       border: none;
-      border-bottom: 1px solid rgba(128, 128, 128, 0.641);
     }
-    #btn2{
-    margin-top: 20px;
-    background-color: #006DB7;
-    color: #fff;
-    transition: 1s;
+    .aside-part2 textarea {
+      height: 110px;
+      resize: none;
     }
-    #btn2:hover{
-        background-color: #333333;
+    .aside-part2 button {
+      background-color: #006db7;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+    .content p {
+      margin: 20px 0px;
+      line-height: 28px;
     }
   </style>
   <body>
@@ -179,12 +218,12 @@
         <div class="container">
           <div class="row mx-md-5">
             <div class="col-md-6">
-              <h3>Free Quotation</h3>
+              <h3>Corporate Car</h3>
             </div>
             <div class="col-md-6">
               <nav class="breadcrumb d-flex justify-content-end">
                 <a class="breadcrumb-item" href="index.html">Home</a>
-                <p class="breadcrumb-item">Free Quotation</p>
+                <p class="breadcrumb-item">Corporate Car</p>
               </nav>
             </div>
           </div>
@@ -192,44 +231,112 @@
       </div>
     </section>
 
-    <section class="container py-4" id="form">
-        <div class="row ">
-            <div class="col-6 mx-auto">
-                <div class="form p-4">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" name="" id="" placeholder="Name" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" name="" id="" placeholder="Email id" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="tel" name="" id="" placeholder="Phone No." class="form-control" maxlength="10" minlength="10"required> 
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="" id="" placeholder="Company Name" class="form-control" required>
-                            </div>
-                            <div class="col-md-12">
-                                <select name="Select Service" value="Select Service" id="">
-                                    <option value="Select Services">Select Services</option>
-                                    <option value="employees transportation">employees transportation</option>
-                                    <option value="Corporate Car">Corporate Car</option>
-                                    <option value="Airport Transfer">Airport Transfer</option>
-                                    <option value="Monthly Rental">Monthly Rental</option>
-                                    <option value="Enquiry">Enquiry</option>
-                                </select>
-                            </div>
-                            <div class="col-md-12">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control" required></textarea>
-                            </div>
-                            
-                        </div>
-                        <input type="submit" id="btn2" value="Send Message" class="form-control">
-                    </form>
-                </div>
-            </div>
+    <section class="container py-3">
+      <div class="row mx-md-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          <aside class="aside-part">
+            <a href="employee_transport.html">employee transportation</a>
+            <a href="corporate_car.html">Corporate Car</a>
+            <a href="airport_transfer.html">Airport Transfer</a>
+            <a href="monthly_rental.html">Monthly rental</a>
+            <a href="safety_standards.html">Safety Standard Of ICabs</a>
+          </aside>
+          <div class="mt-4">
+            <aside class="aside-part2">
+              <a href="">Quick Enquiry</a>
+              <input type="text" placeholder="Name" class="form-control">
+              <input type="email" placeholder="Email" class="form-control">
+              <input type="tel" placeholder="phone No." class="form-control">
+              <select name="" id="">
+                <option value="">select service</option>
+                <option value="">employee transportation</option>
+                <option value="">Corporate Car</option>
+                <option value="">Airport Transfer</option>
+                <option value="">Monthly rental</option>
+              </select>
+              <textarea
+                class="form-control"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </aside>
+          </div>
         </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="content">
+            <p>
+              Since, iCabs is equipped with high end fleet of vehicles; you can
+              book as per your corporate needs. Whether you have group of
+              delegates coming or couple of top company associates, we have
+              fleet of vehicles to offer transfer service accordingly. In fact,
+              we have tie-ups with many top companies in Telangana and Hyderabad
+              to pick and drop company employees and associates regularly.
+              <br />
+              Our corporate car rental service is spread across Telangana,
+              Hyderabad for all major companies. Corporate organizations need to
+              devote their precious time on implementing transport service to
+              employees. This gets eliminated when you connect us iCabs
+              Transportation Service where we offer customized corporate car
+              service. We help in implementing the transport facilities as per
+              the destination of employees. <br />
+              You can connect with us, understand the package and book it
+              accordingly for long term car rental service. We got fleet of cars
+              for employees working in different positions. So you can book
+              accordingly and help employee commute easily.
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <h6>
+                  <b><span>Reasons to book our corporate car rental</span></b>
+                </h6>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i
+                  >One point contact to deal and book the rental service
+                </p>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i
+                  >Chauffeurs undergo strict training and security process to
+                  ensure offering professional service
+                </p>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i>
+                  Complete transparency in booking and billing
+                </p>
+              </div>
+              <div class="col-md-6">
+                <img
+                  class="img-fluid"
+                  src="https://www.icabstransport.com/images/services/rac-services.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <p>
+            The best thing about booking our corporate car rental is the fleet
+            of luxury and economical cars available. Our primary goal is to
+            offer professional service to corporates. From first-aid-kit to GPRS
+            system, our fleet of cars are equipped all the necessary things
+            required during car journey. Our premium segments of car are for top
+            company executives to offer comfort and luxury transfer experience.
+            Connect with us to know more about our Corporate Car service.
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer class="container-fluid py-4" id="footer">

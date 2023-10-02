@@ -20,11 +20,12 @@
     />
   </head>
   <style>
-    span{
-        color: #18496B;
+    span {
+      color: #18496b;
     }
     #breadcrumb {
-      background: url(assets/breadcrumb/mac.jpg);
+      background: url(assets/breadcrumb/plane.jpg);
+      background-position: center;
       background-size: cover;
       background-position: center;
       background-size: cover;
@@ -53,28 +54,66 @@
     .breadcrumb-item + .breadcrumb-item::before {
       color: #fff;
     }
-    .form{
-        background-color: #DCDBDB;
+    .aside-part {
+      background-color: #f1f1f1;
     }
-    #form input ,select{
-        margin-bottom: 20px;
-        padding: 13px;
+    .aside-part a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
     }
-    form select {
-      padding: 13px !important;
+    .aside-part a:nth-child(3) {
+      background-color: #006db7;
+      color: #fff;
+    }
+    .aside-part a:hover {
+      background-color: #006db7;
+      color: white;
+    }
+    .aside-part2 {
+      background-color: #f1f1f1;
+    }
+    .aside-part2 a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
+      background-color: #006db7;
+      color: #fff;
+    }
+    .aside-part2 input,
+    textarea,
+    button {
+      margin: 10px 0px;
+      padding: 10px 10px;
+    }
+
+    .aside-part2 select {
       width: 100%;
-      border-radius: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      outline: none;
       border: none;
-      border-bottom: 1px solid rgba(128, 128, 128, 0.641);
     }
-    #btn2{
-    margin-top: 20px;
-    background-color: #006DB7;
-    color: #fff;
-    transition: 1s;
+    .aside-part2 textarea {
+      height: 110px;
+      resize: none;
     }
-    #btn2:hover{
-        background-color: #333333;
+    .aside-part2 button {
+      background-color: #006db7;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+    .content p {
+      margin: 20px 0px;
+      line-height: 28px;
     }
   </style>
   <body>
@@ -179,12 +218,12 @@
         <div class="container">
           <div class="row mx-md-5">
             <div class="col-md-6">
-              <h3>Free Quotation</h3>
+              <h3>Airport Transfer</h3>
             </div>
             <div class="col-md-6">
               <nav class="breadcrumb d-flex justify-content-end">
                 <a class="breadcrumb-item" href="index.html">Home</a>
-                <p class="breadcrumb-item">Free Quotation</p>
+                <p class="breadcrumb-item">Airport Transfer</p>
               </nav>
             </div>
           </div>
@@ -192,44 +231,130 @@
       </div>
     </section>
 
-    <section class="container py-4" id="form">
-        <div class="row ">
-            <div class="col-6 mx-auto">
-                <div class="form p-4">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" name="" id="" placeholder="Name" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" name="" id="" placeholder="Email id" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="tel" name="" id="" placeholder="Phone No." class="form-control" maxlength="10" minlength="10"required> 
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="" id="" placeholder="Company Name" class="form-control" required>
-                            </div>
-                            <div class="col-md-12">
-                                <select name="Select Service" value="Select Service" id="">
-                                    <option value="Select Services">Select Services</option>
-                                    <option value="employees transportation">employees transportation</option>
-                                    <option value="Corporate Car">Corporate Car</option>
-                                    <option value="Airport Transfer">Airport Transfer</option>
-                                    <option value="Monthly Rental">Monthly Rental</option>
-                                    <option value="Enquiry">Enquiry</option>
-                                </select>
-                            </div>
-                            <div class="col-md-12">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control" required></textarea>
-                            </div>
-                            
-                        </div>
-                        <input type="submit" id="btn2" value="Send Message" class="form-control">
-                    </form>
-                </div>
-            </div>
+    <section class="container py-3">
+      <div class="row mx-md-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          <aside class="aside-part">
+            <a href="employee_transport.html">employee transportation</a>
+            <a href="corporate_car.html">Corporate Car</a>
+            <a href="airport_transfer.html">Airport Transfer</a>
+            <a href="monthly_rental.html">Monthly rental</a>
+            <a href="safety_standards.html">Safety Standard Of ICabs</a>
+          </aside>
+          <div class="mt-4">
+            <aside class="aside-part2">
+              <a href="">Quick Enquiry</a>
+              <input type="text" placeholder="Name" class="form-control" />
+              <input type="email" placeholder="Email" class="form-control" />
+              <input type="tel" placeholder="phone No." class="form-control" />
+              <select name="" id="">
+                <option value="">select service</option>
+                <option value="">employee transportation</option>
+                <option value="">Corporate Car</option>
+                <option value="">Airport Transfer</option>
+                <option value="">Monthly rental</option>
+              </select>
+              <textarea
+                class="form-control"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </aside>
+          </div>
         </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="content">
+            <p>
+              Got delegates to arrive from other country? Got outstation
+              conference and want transfer service for employee? Then iCabs
+              Transport Solution is the best service you can go for. Reaching
+              the airport on time really important in order to not miss any
+              important meeting, conference and product launches, out staff will
+              forecast and plan your journey for you so you are on time.
+              Especially when you are in jam packed metropolitian city like
+              Hyderabad. With our Airport Transfer service, we ensure that your
+              employees, clients and delegates reach on time safely.
+            </p>
+            <p>
+              If you want to impress your delegates or clients visiting your
+              office, booking corporate airport transfer is the best you can go.
+              Our professional drivers will stand at the airport with a placard
+              for easy identification. From SUV to sedan we have fleet of cars
+              for airport transfer. It's very easy to book airport transfer with
+              iCabs Transport Service.
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i
+                  >Enter your Ride Details including name
+                </p>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i
+                  >Choose the car which you want to book
+                </p>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i>
+                  Enter time and date
+                </p>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i>
+                  Confirm booking
+                </p>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i>
+                  All details is sent via SMS and mail
+                </p>
+              </div>
+              <div class="col-md-6">
+                <img
+                  class="img-fluid"
+                  src="https://www.icabstransport.com/images/services/ap-services.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <p>
+            We at iCabs Transport Service offer reliable and affordable airport
+            transfer service in Telangana, Hyderabad. With high-quality vehicles
+            and professional drivers, you can expect good service. Our
+            well-trained professional drivers will be on time, greet you with a
+            placard, help you with the luggage and transfer you to the
+            destination.
+          </p>
+          <p>
+            We pride ourselves in offering quality work for corporate companies
+            in Hyderabad, and continue to grow our business relationship with
+            them. With our clean fleet of cars and professional drivers, we
+            ensure that the airport transfer service is done with perfection.
+            Our drivers will pick your employees or delegate from the airport on
+            time and safely transport them to your office. Book us in advance
+            for the airport transfer service with all the details for prompt
+            service.
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer class="container-fluid py-4" id="footer">

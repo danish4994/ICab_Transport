@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    span {
+      color: #18496b;
+    }
+    #breadcrumb {
+      background: url(assets/breadcrumb/monthly.jpg);
+      background-position: center;
+      background-size: cover;
+      background-position: center;
+      background-size: cover;
+      padding: 0;
+      color: white;
+    }
+    .blue-bg {
+      background-color: rgba(0, 0, 0, 0.749);
+      width: 100%;
+      height: 100%;
+      padding: 30px 0px;
+    }
+    #breadcrumb a {
+      text-decoration: none;
+      color: white;
+      margin-top: 10px;
+    }
+    #breadcrumb h3 {
+      color: #fff;
+      margin-top: 10px;
+    }
+    #breadcrumb p {
+      color: #fff;
+      margin-top: 10px;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+      color: #fff;
+    }
+    .aside-part {
+      background-color: #f1f1f1;
+    }
+    .aside-part a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
+    }
+    .aside-part a:nth-child(4) {
+      background-color: #006db7;
+      color: #fff;
+    }
+    .aside-part a:hover {
+      background-color: #006db7;
+      color: white;
+    }
+    .aside-part2 {
+      background-color: #f1f1f1;
+    }
+    .aside-part2 a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
+      background-color: #006db7;
+      color: #fff;
+    }
+    .aside-part2 input,
+    textarea,
+    button {
+      margin: 10px 0px;
+      padding: 10px 10px;
+    }
+
+    .aside-part2 select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+    }
+    .aside-part2 textarea {
+      height: 110px;
+      resize: none;
+    }
+    .aside-part2 button {
+      background-color: #006db7;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+    .content p {
+      margin: 20px 0px;
+      line-height: 28px;
+    }
+    #support{
+        background-color: #F1F1F1;
+    }
+    .bg2{
+        background-color: #fff;
+    }
+    #support img{
+        width: 100%;
+    }
+    #support a{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    #support p{
+        font: 13px !important;
+    }
+  </style>
+  <body>
+    <section class="container-fluid" id="top-message">
+      <div class="container">
+        <div class="row mx-5">
+          <div class="col-lg-6">
+            <div class="d-flex text-white">
+              <p class=""><i class="fa fa-mobile"></i> +91 9506519510</p>
+              <p class="ms-3">
+                <i class="fa fa-paper-plane pe-1"></i>danish0ahmad@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" id="hover">
+            <div class="text-end text-white">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-linkedin ms-1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header class="container" id="navbar">
+      <div class="row mx-md-5">
+        <nav class="navbar navbar-expand-lg">
+          <div class="navbar-brand">
+            <a href="index.html"><img src="assets/logo.png" alt="" /></a>
+          </div>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center justify-content-end me-5"
+            id="collapsibleNavId"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link pe-4 active" href="covid_safety.html"
+                  >Covid Safety</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4" href="about_us.html">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link pe-4"
+                  href=""
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >SERVICES</a
+                >
+                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownId">
+                  <a class="dropdown-item text-white" href="employee_transport.html"
+                    >Employee Transportation</a
+                  >
+                  <a class="dropdown-item text-white" href="corporate_car.html">Corporate Car</a>
+                  <a class="dropdown-item text-white" href="airport_transfer.html"
+                    >Airport Transfer</a
+                  >
+                  <a class="dropdown-item text-white" href="monthly_rental.html">Monthy Rental</a>
+                  <a class="dropdown-item text-white" href="safety_standards.html"
+                    >Safety Standard of ICabs</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4" href="fleet.html">FLEET</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4" href="career.html">CAREERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4" href="get_quote.html">GET A QUOTE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4" href="contact_us.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container-fluid" id="breadcrumb">
+      <div class="blue-bg">
+        <div class="container">
+          <div class="row mx-md-5">
+            <div class="col-md-6">
+              <h3>Montly Rental</h3>
+            </div>
+            <div class="col-md-6">
+              <nav class="breadcrumb d-flex justify-content-end">
+                <a class="breadcrumb-item" href="index.html">Home</a>
+                <p class="breadcrumb-item">Montly Rental</p>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-3">
+      <div class="row mx-md-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          <aside class="aside-part">
+            <a href="employee_transport.html">employee transportation</a>
+            <a href="corporate_car.html">Corporate Car</a>
+            <a href="airport_transfer.html">Airport Transfer</a>
+            <a href="monthly_rental.html">Monthly rental</a>
+            <a href="safety_standards.html">Safety Standard Of ICabs</a>
+          </aside>
+          <div class="mt-4">
+            <aside class="aside-part2">
+              <a href="">Quick Enquiry</a>
+              <input type="text" placeholder="Name" class="form-control" />
+              <input type="email" placeholder="Email" class="form-control" />
+              <input type="tel" placeholder="phone No." class="form-control" />
+              <select name="" id="">
+                <option value="">select service</option>
+                <option value="">employee transportation</option>
+                <option value="">Corporate Car</option>
+                <option value="">Airport Transfer</option>
+                <option value="">Monthly rental</option>
+              </select>
+              <textarea
+                class="form-control"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </aside>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="content">
+            <p>
+              We at iCabs offer customized monthly rental car service for
+              corporates. Our packages are designed to enable companies to rent
+              out the car for monthly basis. If your employees keep travelling
+              to different places and have delegates coming regularly, then
+              booking a monthly car rental service from iCabs is the best.
+              Whether you need a luxury car or simple car, we have all under the
+              monthly car rental package.
+            </p>
+            <p>
+              Compare the monthly car rental package with other transport
+              companies in Hyderabad, we guarantee that you will get the best in
+              us. The rates come in up to 2000km to 5000km and extra per hours.
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <h6>
+                  <b><span>Why Rent us for a Month?</span></b>
+                </h6>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i
+                  >Cost effective monthly package
+                </p>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i
+                  >Multiple Fleet options
+                </p>
+                <p>
+                  <i
+                    class="fa fa-hand-o-right pe-2"
+                    style="color: #18496b; font-weight: bold"
+                  ></i>
+                  Premium customer service
+                </p>
+              </div>
+              <div class="col-md-6">
+                <img
+                  class="img-fluid"
+                  src="https://www.icabstransport.com/images/services/mrac-services.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <h6>
+            <b><span>Benefits you get with Monthly Car Rental</span></b>
+          </h6>
+          <p>
+            By booking our monthly car rental service, you can enjoy certain
+            benefits like. There are no hidden charges involved. In one price,
+            everything is included which will save your money.
+          </p>
+          <h6>
+            <b><span>Total Flexibility</span></b>
+          </h6>
+          <p>
+            When you book our monthly car rental service, you get complete
+            flexibility. Right from booking to choosing the package and car, you
+            can book as per your corporate need
+          </p>
+          <h6>
+            <b><span>Vehicle Choice</span></b>
+          </h6>
+          <p>
+            Whether you want to choose the vehicle for top executives or
+            employees, we have fleet of cars to choose. Book the car according
+            to your business need. You can book us in advance for the monthly
+            care rental purpose and get the best package with amazing fleet of
+            car options.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid py-5" id="support">
+        <div class="container">
+          <div class="row mx-md-5">
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <img src="https://www.icabstransport.com/images/news/employeetransport.jpg" alt="" />
+              <div class="bg2 p-2">
+                <h5 class="text-center">Employee Transportation</h5>
+                <p>
+                    iCabs Transport service has emerged as the leading transport company in Telangana, 
+                    Hyderabad for Employee Transportation. Since, Hyderabad is the IT hub; employees 
+                    have different working hours... 
+                </p>
+                <a href="">Read More <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <img src="https://www.icabstransport.com/images/news/corporatecar.jpg" alt="" />
+              <div class="bg2 p-2">
+                <h5 class="text-center">Corporate Car</h5>
+                <p class="py-2">
+                    Our corporate car rental service is spread across Telangana, Hyderabad for all major companies.
+                     Corporate organizations need to devote their precious time on implementing transport services...
+                </p>
+                <a href="">Read More <i class="fa fa-angle-right"></i></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <img src="https://www.icabstransport.com/images/news/2.jpg" alt="" />
+              <div class="bg2 p-2">
+                <h5 class="text-center">Airport Transfer</h5>
+                <p class="py-2">
+                    iCabs Transport Service offer reliable and affordable airport transfer service in Telangana, 
+                    Hyderabad. With high-quality vehicles and professional drivers, you can expect good service...
+                </p>
+                <a href="">Read More <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="container-fluid py-4" id="footer">
+      <div class="container">
+        <div class="row mx-md-5">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <h5 class="color2">ABOUT US</h5>
+            <p>
+              iCabs Transport Solution is the largest transportation company in
+              Telangana for working professionals. We started this
+              transportation service with the aim to exceed customer
+              expectation.
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <h5 class="color2">Services</h5>
+            <div><i class="bi bi-arrow-right-short"></i><a href="employee_transport.html">Employee Transportation</a></div>
+            <div><i class="bi bi-arrow-right-short"></i><a href="corporate_car.html">Corporate Car</a></div>
+            <div><i class="bi bi-arrow-right-short"></i><a href="airport_transfer.html">Airport Transfer</a></div>
+            <div><i class="bi bi-arrow-right-short"></i><a href="monthly_rental.html">Monthly Rental</a></div>
+            <div><i class="bi bi-arrow-right-short"></i><a href="safety_standards.html">Safety Standards of ICabs</a></div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <h5 class="color2">Contact Us</h5>
+            <div class="d-flex">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p class="ms-4">
+                iCabs Transport Solutions Flat No. 107, Lake view Apartments,
+                Kondapur Road, Khanamet, Kothaguda, Hyderabad, Telangana. India
+                - 500081
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <h5 class="color2">Reach Us</h5>
+            <div class="d-flex">
+              <i class="bi bi-telephone-fill pe-2"></i>
+              <p>+91 9506519510</p>
+            </div>
+            <div class="d-flex">
+              <i class="bi bi-phone pe-2"></i>
+              <p>+91 7007946281</p>
+            </div>
+            <div class="d-flex">
+              <i class="bi bi-envelope pe-2"></i>
+              <p>danish0ahmad@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="container-fluid" id="btm-part">
+      <div class="container">
+        <div class="row mx-md-5">
+          <h6>Copyright © 2020 iCabs Transport Solution.</h6>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

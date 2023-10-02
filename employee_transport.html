@@ -20,13 +20,12 @@
     />
   </head>
   <style>
-    span{
-        color: #18496B;
+    span {
+      color: #18496b;
     }
     #breadcrumb {
-      background: url(assets/breadcrumb/mac.jpg);
-      background-size: cover;
-      background-position: center;
+      background: url('https://5.imimg.com/data5/YL/QV/VA/GLADMIN-61379424/selection-681-500x500.png');
+      background-position: top;
       background-size: cover;
       padding: 0;
       color: white;
@@ -53,28 +52,65 @@
     .breadcrumb-item + .breadcrumb-item::before {
       color: #fff;
     }
-    .form{
-        background-color: #DCDBDB;
+    .aside-part {
+      background-color: #f1f1f1;
     }
-    #form input ,select{
-        margin-bottom: 20px;
-        padding: 13px;
+    .aside-part a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
     }
-    form select {
-      padding: 13px !important;
+    .aside-part a:first-child {
+      background-color: #006db7;
+      color: #fff;
+    }
+    .aside-part a:hover {
+      background-color: #006db7;
+      color: white;
+    }
+    .aside-part2 {
+      background-color: #f1f1f1;
+    }
+    .aside-part2 a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
+      background-color: #006db7;
+      color: #fff;
+    }
+    .aside-part2 input,
+    textarea,
+    button {
+      margin: 10px 0px;
+      padding: 10px 10px;
+    }
+
+    .aside-part2 select {
       width: 100%;
-      border-radius: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      outline: none;
       border: none;
-      border-bottom: 1px solid rgba(128, 128, 128, 0.641);
     }
-    #btn2{
-    margin-top: 20px;
-    background-color: #006DB7;
-    color: #fff;
-    transition: 1s;
+    .aside-part2 textarea {
+      height: 110px;
+      resize: none;
     }
-    #btn2:hover{
-        background-color: #333333;
+    .aside-part2 button {
+      background-color: #006db7;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+    .content p{
+        margin: 20px 0px;
     }
   </style>
   <body>
@@ -179,12 +215,12 @@
         <div class="container">
           <div class="row mx-md-5">
             <div class="col-md-6">
-              <h3>Free Quotation</h3>
+              <h3>Employee Transportation</h3>
             </div>
             <div class="col-md-6">
               <nav class="breadcrumb d-flex justify-content-end">
                 <a class="breadcrumb-item" href="index.html">Home</a>
-                <p class="breadcrumb-item">Free Quotation</p>
+                <p class="breadcrumb-item">Employee Transportation</p>
               </nav>
             </div>
           </div>
@@ -192,44 +228,92 @@
       </div>
     </section>
 
-    <section class="container py-4" id="form">
-        <div class="row ">
-            <div class="col-6 mx-auto">
-                <div class="form p-4">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" name="" id="" placeholder="Name" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" name="" id="" placeholder="Email id" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="tel" name="" id="" placeholder="Phone No." class="form-control" maxlength="10" minlength="10"required> 
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="" id="" placeholder="Company Name" class="form-control" required>
-                            </div>
-                            <div class="col-md-12">
-                                <select name="Select Service" value="Select Service" id="">
-                                    <option value="Select Services">Select Services</option>
-                                    <option value="employees transportation">employees transportation</option>
-                                    <option value="Corporate Car">Corporate Car</option>
-                                    <option value="Airport Transfer">Airport Transfer</option>
-                                    <option value="Monthly Rental">Monthly Rental</option>
-                                    <option value="Enquiry">Enquiry</option>
-                                </select>
-                            </div>
-                            <div class="col-md-12">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control" required></textarea>
-                            </div>
-                            
-                        </div>
-                        <input type="submit" id="btn2" value="Send Message" class="form-control">
-                    </form>
-                </div>
-            </div>
+    <section class="container py-3">
+      <div class="row mx-md-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          <aside class="aside-part">
+            <a href="employee_transport.html">employee transportation</a>
+            <a href="corporate_car.html">Corporate Car</a>
+            <a href="airport_transfer.html">Airport Transfer</a>
+            <a href="monthly_rental.html">Monthly rental</a>
+            <a href="safety_standards.html">Safety Standard Of ICabs</a>
+          </aside>
+          <div class="mt-4">
+            <aside class="aside-part2">
+              <a href="">Quick Enquiry</a>
+              <input type="text" placeholder="Name" class="form-control" />
+              <input type="email" placeholder="Email" class="form-control" />
+              <input type="tel" placeholder="phone No." class="form-control" />
+              <select name="" id="">
+                <option value="">select service</option>
+                <option value="">employee transportation</option>
+                <option value="">Corporate Car</option>
+                <option value="">Airport Transfer</option>
+                <option value="">Monthly rental</option>
+              </select>
+              <textarea
+                class="form-control"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </aside>
+          </div>
         </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="content">
+            <p>
+                iCabs Transport service has emerged as the leading transport company
+                in Telangana, Hyderabad for Employee Transportation. Since,
+                Hyderabad is the IT hub; employees have different working hours
+                according to the overseas clients’ time zone. This is why; companies
+                hire us for employee transportation helping executives and other
+                employee to travel home and office safely. Our professional
+                chauffeurs arrive at time to pick and drop to the destination. We
+                are currently associated with MNCs, BPOs and KPOs in Telangana,
+                Hyderabad.
+              </p>
+              <p>
+                We believe that every company wants to treat its employees fairly
+                that will bring positive return in long term. Comfort and facilities
+                are two most important parts for their happiness. By offering
+                transportation service, companies along with us are doing their best
+                to offer quality and safe working environment to employees. We have
+                fleet of vehicles from 4 seaters to 42 seaters for Employee
+                Transportation. So you can book the vehicle according to the number
+                of employees you want to offer transfer service.
+              </p>
+              <div class="row">
+                <div class="col-md-6">
+                    <h6><b><span>iCabs Transport Service benefits</span></b></h6>
+                    <p><i class="fa fa-hand-o-right pe-2" style="color:#18496b;font-weight:bold"></i>Fleet Optimization</p>
+                    <p><i class="fa fa-hand-o-right pe-2" style="color:#18496b;font-weight:bold"></i>Routing and planning</p>
+                    <p><i class="fa fa-hand-o-right pe-2" style="color:#18496b;font-weight:bold"></i>Fleet of vehicles to choose</p>
+                    <p><i class="fa fa-hand-o-right pe-2" style="color:#18496b;font-weight:bold"></i>Experienced chauffeurs</p>
+                    <p><i class="fa fa-hand-o-right pe-2" style="color:#18496b;font-weight:bold"></i>Customized package</p>
+                    <p><i class="fa fa-hand-o-right pe-2" style="color:#18496b;font-weight:bold"></i>Tie-up with Licensed company</p>
+                    <p><i class="fa fa-hand-o-right pe-2" style="color:#18496b;font-weight:bold"></i>Convenient billing process</p>
+                    <p><i class="fa fa-hand-o-right pe-2" style="color:#18496b;font-weight:bold"></i>All cars are equipped with GPS devices 
+                    and real-time tracking
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="https://www.icabstransport.com/images/services/et-services.png" alt="">
+                </div>
+              </div>
+          </div>
+          <p>For us, our passenger safety is really important, and so we ensure that we keep 
+            a track on our every vehicle on road. From sedan to SUV, every car in well-maintained
+             and comply with rules and regulations. So sit back and relax to enjoy safe ride. 
+             We at iCabs have been offering employee transportation to some of the top companies 
+             in Telangana, Hyderabad. So if you want to join our clientele list then do connect 
+             with us to help your employees get professional transfer service.</p>
+        </div>
+      </div>
     </section>
 
     <footer class="container-fluid py-4" id="footer">
@@ -247,10 +331,10 @@
           <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <h5 class="color2">Services</h5>
             <div><i class="bi bi-arrow-right-short"></i><a href="employee_transport.html">Employee Transportation</a></div>
-            <div><i class="bi bi-arrow-right-short"></i><a href="corporate_car.html">Corporate Car</a></div>
-            <div><i class="bi bi-arrow-right-short"></i><a href="airport_transfer.html">Airport Transfer</a></div>
-            <div><i class="bi bi-arrow-right-short"></i><a href="monthly_rental.html">Monthly Rental</a></div>
-            <div><i class="bi bi-arrow-right-short"></i><a href="safety_standards.html">Safety Standards of ICabs</a></div>
+                <div><i class="bi bi-arrow-right-short"></i><a href="corporate_car.html">Corporate Car</a></div>
+                <div><i class="bi bi-arrow-right-short"></i><a href="airport_transfer.html">Airport Transfer</a></div>
+                <div><i class="bi bi-arrow-right-short"></i><a href="monthly_rental.html">Monthly Rental</a></div>
+                <div><i class="bi bi-arrow-right-short"></i><a href="safety_standards.html">Safety Standards of ICabs</a></div>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <h5 class="color2">Contact Us</h5>
