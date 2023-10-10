@@ -259,7 +259,7 @@ carousel-control-next-icon{
 #archivement{
   background: url(assets/Transportation.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   padding: 0;
   
 }
