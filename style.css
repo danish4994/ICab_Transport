@@ -123,6 +123,12 @@ span{
   position: absolute;
   top: 240px;
 }
+.carousel-control-prev-icon{
+  width: 40% !important;
+}
+.carousel-control-next-icon{
+  width: 40% !important;
+}
 .carousel-control-next{
   background-color: black;
   width: 50px;
