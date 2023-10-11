@@ -94,13 +94,13 @@ span{
 #carousel h1{
     color: #006DB7;
     text-wrap: nowrap;
-	  animation: slide-in-top 0.5s ease-in-out 0.8s both;
+	  animation: slide-in-top 0.5s ease-in-out 1.5s both;
     
 }
 #carousel h5{
     font-weight: 350 !important;
     line-height: 30px;
-    animation: slide-in-right 0.5s ease-in-out 0.4s both;
+    animation: slide-in-right 0.5s ease-in-out 0.8s both;
 }
 
 #btn{
@@ -108,15 +108,13 @@ span{
     padding: 17px 35px;
     color: #fff;
     font-weight: 600;
-    animation: slide-in-bottom 0.5s ease-in-out 0.8s both;
+    animation: slide-in-bottom 0.5s ease-in-out 1.5s both;
     transition: 1s;
 }
 #carousel .btn:hover{
   background-color: #006DB7 !important;
 }
-#carousel img{
-  animation: opacity 1s ease-in-out 0.5s both;
-}
+
 .carousel-control-prev{
   background-color: black;
   width: 50px;
@@ -138,14 +136,7 @@ carousel-control-next-icon{
   height: 15px !important;
   font-size: 15px;
 }
-  @keyframes opacity {
-  0%{
-    opacity: 0.2;
-  }
-  100%{
-    opacity: 1;
-  }
-  }
+  
   @keyframes slide-in-bottom {
     0% {
               transform: translateY(300px);
