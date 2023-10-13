@@ -248,16 +248,19 @@
             <img class="img-fluid" src="assets/Home-Contact-Banner.jpg" alt="">
         </div>
         <div class="col-md-6">
-            <form action="" class="p-2">
+            <form action="" onsubmit="return validation()" class="p-2">
                 <div class="row ">
                     <div class="col-md-6">
-                    <div class="d-flex"><i class="fa fa-user"></i><input type="text" placeholder="Name" class="form-control mb-md-5 mb-2" required></div>
+                    <div class="d-flex"><i class="fa fa-user"></i><input type="text" placeholder="Name" class="form-control mb-md-5 mb-2" id="name"></div>
+                    <div id="nameerror"></div>
                     </div>
                     <div class="col-md-6">
-                        <div class="d-flex"><i class="fa fa-envelope"></i><input type="email" placeholder="Email Id" class="form-control mb-2" required></div>
+                        <div class="d-flex"><i class="fa fa-envelope"></i><input type="email" placeholder="Email Id" class="form-control mb-2" id="email" required></div>
+                        <div id="emailerror"></div>
                     </div>
                     <div class="col-md-6"> 
-                        <div class="d-flex"><i class="fa fa-phone"></i><input type="tel" placeholder="Phonen No." class="form-control mb-md-5 mb-2" required></div>
+                        <div class="d-flex"><i class="fa fa-phone"></i><input type="tel" placeholder="Phonen No." class="form-control mb-md-5 mb-2" id="mobile"></div>
+                        <div id="mobileerror"></div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex"><i class="fa fa-bookmark"></i>
@@ -654,8 +657,8 @@
     </div>
 </section>
 
-
-    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
 

@@ -61,6 +61,9 @@
       margin-bottom: 20px;
       padding: 13px;
     }
+    #nameerror , #emailerror ,  #phoneerror , #subjecterror{
+      color: red;
+    }
     #btn2 {
       margin-top: 20px;
       background-color: #006db7;
@@ -209,36 +212,38 @@
           <div class="col-md-8">
             <h4 class="pb-4">Send a Message</h4>
           <div class="form p-4">
-            <form action="">
+            <form action="" onsubmit="return validation()">
               <div class="row">
                 <div class="col-md-6">
                   <input
                     type="text"
-                    name=""
-                    id=""
+                    name="username"
+                    id="name"
                     placeholder="Name"
                     class="form-control"
                   />
+                  <div id="nameerror"></div>
                 </div>
                 <div class="col-md-6">
                   <input
                     type="email"
-                    name=""
-                    id=""
+                    name="email"
+                    id="email"
                     placeholder="Email id"
                     class="form-control"
                   />
+                  <div id="emailerror"></div>
                 </div>
                 <div class="col-md-6">
                   <input
                     type="tel"
-                    name=""
-                    id=""
+                    name="mobile"
+                    id="mobile"
                     placeholder="Phone No."
                     class="form-control"
                     maxlength="10"
-                    minlength="10"
                   />
+                  <div id="phoneerror"></div>
                 </div>
 
                 <div class="col-md-6">
@@ -258,7 +263,9 @@
                     type="text"
                     placeholder="Subject"
                     class="form-control"
+                    id="subject"
                   />
+                  <div id="subjecterror"></div>
                 </div>
                 <div class="col-md-12">
                   <textarea
@@ -374,5 +381,6 @@
     </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
