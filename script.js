@@ -7,17 +7,23 @@ function validation(){
     let emailStatus = false;
     let PhoneStatus = false;
     let subjectStatus = false;
+    let CharExp = /^[a-zA-Z]+$/;
 
     if(username === ""){
-        document.getElementById("nameerror").innerHTML = "Please Enter Valid Name";
+        document.getElementById("nameerror").innerHTML = "Please Enter Valid Name *";
     }
-    else{
-        document.getElementById("nameerror").innerHTML = "";
-        usernameStatus = true;
+    else {
+        if(username.match(CharExp)){
+            document.getElementById("nameerror").innerHTML = "";
+            usernameStatus = true;
+        }
+        else{
+        document.getElementById("nameerror").innerHTML = "Only Characters Are Allowed";
+    }
     }
 
     if(email === ""){
-        document.getElementById("emailerror").innerHTML = "Please Enter Valid Email";
+        document.getElementById("emailerror").innerHTML = "Please Enter Valid Email *";
     }
     else{
         document.getElementById("emailerror").innerHTML = "";
@@ -25,13 +31,13 @@ function validation(){
     }
 
     if(phone === ""){
-        document.getElementById("phoneerror").innerHTML = "Please Enter Valid phone Number";
+        document.getElementById("phoneerror").innerHTML = "Please Enter Valid phone Number *";
     }
     else if(isNaN(phone)){
-        document.getElementById("phoneerror").innerHTML = "Please Enter Number Only";
+        document.getElementById("phoneerror").innerHTML = "Please Enter Number Only *";
     } 
     else if(phone.length<10){
-        document.getElementById("phoneerror").innerHTML = "please Enter 10 Digit" ;
+        document.getElementById("phoneerror").innerHTML = "please Enter 10 Digit *" ;
     }
     else{
         document.getElementById("phoneerror").innerHTML = "";
@@ -39,7 +45,7 @@ function validation(){
     }
 
     if(subject === ""){
-        document.getElementById("subjecterror").innerHTML = "Please Enter valid Subject"
+        document.getElementById("subjecterror").innerHTML = "Please Enter valid Subject *"
     }
     else{
         document.getElementById("subjecterror").innerHTML = ""
