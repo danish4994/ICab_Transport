@@ -251,16 +251,16 @@
             <form action="" onsubmit="return validation()" class="p-2">
                 <div class="row ">
                     <div class="col-md-6">
-                    <div class="d-flex"><i class="fa fa-user"></i><input type="text" placeholder="Name" class="form-control mb-md-5 mb-2" id="name"></div>
-                    <div id="nameerror"></div>
+                        <div id="nameerror"></div>
+                    <div class="d-flex"><i class="fa fa-user"></i><input type="text" placeholder="Name" class="form-control mb-md-5 " id="name"></div>
                     </div>
                     <div class="col-md-6">
-                        <div class="d-flex"><i class="fa fa-envelope"></i><input type="email" placeholder="Email Id" class="form-control mb-2" id="email" required></div>
                         <div id="emailerror"></div>
+                        <div class="d-flex"><i class="fa fa-envelope"></i><input type="email" placeholder="Email Id" class="form-control " id="email"></div>
                     </div>
                     <div class="col-md-6"> 
-                        <div class="d-flex"><i class="fa fa-phone"></i><input type="tel" placeholder="Phonen No." class="form-control mb-md-5 mb-2" id="mobile"></div>
                         <div id="mobileerror"></div>
+                        <div class="d-flex"><i class="fa fa-phone"></i><input type="tel" placeholder="Phonen No." class="form-control mb-md-5 " id="mobile"></div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex"><i class="fa fa-bookmark"></i>
@@ -277,7 +277,7 @@
                           </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="d-flex"><i class="fa fa-map"></i><textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control mb-4" required></textarea></div>
+                        <div class="d-flex"><i class="fa fa-map"></i><textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control mb-4"></textarea></div>
                     </div>
                 </div>
                 <input id="btnn" type="submit" value="Send Message">
@@ -658,7 +658,66 @@
 </section>
 
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<script>
+    function validation(){
+      let username = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let mobile = document.getElementById("mobile").value;
+
+      let nameStatus = false;
+      let emailStatus = false;
+      let mobileStatus = false;
+      let charExp = /^[a-zA-z]+$/
+      let numExp = /^[0-9]+$/
+      
+
+      if(username === ""){
+        document.getElementById("nameerror").innerHTML = "Please enter Name *"
+      }else{
+        if(username.match(charExp)){
+          document.getElementById("nameerror").innerHTML = ""
+          nameStatus = true;
+        }else{
+          document.getElementById("nameerror").innerHTML = "Please Enter Characters Only *"
+        }
+      }
+
+      if(email === ""){
+        document.getElementById("emailerror").innerHTML = "Please Enter Email Id *"
+      }
+      else{
+        document.getElementById("emailerror").innerHTML = ""
+        emailStatus = true;
+      }
+
+      if(mobile === ""){
+        document.getElementById("mobileerror").innerHTML = "Please Enter Mobile Number *"
+      }
+      else{
+        if(mobile .match(numExp)){
+          if(mobile.length == 10){
+            document.getElementById("mobileerror").innerHTML = ""
+            mobileStatus =true;
+          }else{
+            document.getElementById("mobileerror").innerHTML = "Please Enter 10 digit Mobile Number"
+          }
+        }else{
+          document.getElementById("mobileerror").innerHTML = "Please Enter Numbers Only *"
+        }
+      }
+
+
+
+
+
+      if(nameStatus === true && emailStatus === true && mobileStatus === true ){
+        return true;
+      }else{
+        return false;
+      }
+    }
+  </script>
+
 </body>
 </html>
 

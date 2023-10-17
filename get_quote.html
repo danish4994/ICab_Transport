@@ -76,6 +76,9 @@
     #btn2:hover{
         background-color: #333333;
     }
+    #nameerror , #emailerror , #mobileerror , #companyerror{
+      color: red;
+    }
   </style>
   <body>
     <section class="container-fluid" id="top-message">
@@ -196,19 +199,23 @@
         <div class="row ">
             <div class="col-6 mx-auto">
                 <div class="form p-4">
-                    <form action="">
+                    <form action="" onsubmit="return validation()">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" name="" id="" placeholder="Name" class="form-control" required>
+                                <input type="text" name="" id="name" placeholder="Name" class="form-control" >
+                                <div id="nameerror" class="mb-3"></div>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" name="" id="" placeholder="Email id" class="form-control" required>
+                                <input type="email" name="" id="email" placeholder="Email id" class="form-control">
+                                <div id="emailerror" class="mb-3"></div>
                             </div>
                             <div class="col-md-6">
-                                <input type="tel" name="" id="" placeholder="Phone No." class="form-control" maxlength="10" minlength="10"required> 
+                                <input type="tel" name="" id="mobile" placeholder="Phone No." class="form-control" maxlength="10"> 
+                                <div id="mobileerror" class="mb-3"></div>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" name="" id="" placeholder="Company Name" class="form-control" required>
+                                <input type="text" name="" id="company" placeholder="Company Name" class="form-control">
+                                <div id="companyerror" class="mb-3"></div>
                             </div>
                             <div class="col-md-12">
                                 <select name="Select Service" value="Select Service" id="">
@@ -221,7 +228,7 @@
                                 </select>
                             </div>
                             <div class="col-md-12">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control" required></textarea>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
                             </div>
                             
                         </div>
@@ -291,5 +298,72 @@
     </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      function validation(){
+        let username = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let mobile = document.getElementById("mobile").value;
+        let company = document.getElementById("company").value;
+
+        let nameStatus = false;
+        let emailStatus = false;
+        let mobileStatus = false;
+        let companyStatus = false;
+        let charExp = /^[a-zA-z]+$/
+        let numExp = /^[0-9]+$/
+        
+
+        if(username === ""){
+          document.getElementById("nameerror").innerHTML = "Please enter Name *"
+        }else{
+          if(username.match(charExp)){
+            document.getElementById("nameerror").innerHTML = ""
+            nameStatus = true;
+          }else{
+            document.getElementById("nameerror").innerHTML = "Please Enter Characters Only *"
+          }
+        }
+
+        if(email === ""){
+          document.getElementById("emailerror").innerHTML = "Please Enter Email Id *"
+        }
+        else{
+          document.getElementById("emailerror").innerHTML = ""
+          emailStatus = true;
+        }
+
+        if(mobile === ""){
+          document.getElementById("mobileerror").innerHTML = "Please Enter Mobile Number *"
+        }
+        else{
+          if(mobile .match(numExp)){
+            if(mobile.length == 10){
+              document.getElementById("mobileerror").innerHTML = ""
+              mobileStatus =true;
+            }else{
+              document.getElementById("mobileerror").innerHTML = "Please Enter 10 digit Mobile Number *"
+            }
+          }else{
+            document.getElementById("mobileerror").innerHTML = "Please Enter Numbers Only *"
+          }
+        }
+
+        if(company === ""){
+          document.getElementById("companyerror").innerHTML = "Please Enter Company Name *"
+        }else{
+          document.getElementById("companyerror").innerHTML = "";
+          companyStatus = true;
+        }
+
+
+
+
+        if(nameStatus === true && emailStatus === true && mobileStatus === true && companyStatus === true){
+          return true;
+        }else{
+          return false;
+        }
+      }
+    </script>
   </body>
 </html>

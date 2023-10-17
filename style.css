@@ -37,7 +37,6 @@ span{
     /* color: black !important; */
     font-weight: 600;
     font-size: 16px;
-
 }
 
 .navbar ul li .dropdown-menu{
@@ -256,6 +255,7 @@ carousel-control-next-icon{
 #archivement{
   background: url(assets/Transportation.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-position: bottom;
   padding: 0;
   
@@ -276,6 +276,10 @@ form select {
   border-radius: 10px;
   border: none;
   border-bottom: 1px solid rgba(128, 128, 128, 0.641);
+}
+
+#nameerror , #emailerror , #mobileerror , #companyerror{
+  color: red;
 }
 
 /* this part end here */
