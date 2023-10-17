@@ -267,7 +267,9 @@ carousel-control-next-icon{
   font-size: 40px;
   padding-bottom: 20px;
 }
-
+form input{
+  margin-bottom: 30px;
+}
 
 form select {
   padding: 8px !important;
@@ -275,9 +277,10 @@ form select {
   border-radius: 10px;
   border: none;
   border-bottom: 1px solid rgba(128, 128, 128, 0.641);
+  margin-bottom: 30px;
 }
 
-#nameerror , #emailerror , #mobileerror , #companyerror{
+#nameerror , #emailerror , #mobileerror , #messageerror{
   color: red;
 }
 

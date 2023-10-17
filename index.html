@@ -277,7 +277,8 @@
                           </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="d-flex"><i class="fa fa-map"></i><textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control mb-4"></textarea></div>
+                        <div class="d-flex"><i class="fa fa-map"></i><textarea name="" id="message" cols="30" rows="10" placeholder="Message" class="form-control mb-4"></textarea></div>
+                        <div id="messageerror" class="mb-3"></div>
                     </div>
                 </div>
                 <input id="btnn" type="submit" value="Send Message">
@@ -663,10 +664,11 @@
       let username = document.getElementById("name").value;
       let email = document.getElementById("email").value;
       let mobile = document.getElementById("mobile").value;
-
+      let message = document.getElementById("message").value
       let nameStatus = false;
       let emailStatus = false;
       let mobileStatus = false;
+      let messageStatus = false;
       let charExp = /^[a-zA-z]+$/
       let numExp = /^[0-9]+$/
       
@@ -706,7 +708,12 @@
         }
       }
 
-
+      if(message === ""){
+        document.getElementById("messageerror").innerHTML = "Please Enter Message *"
+      }else{
+        document.getElementById("messageerror").innerHTML = ""
+        messageStatus = true;
+      }
 
 
 
