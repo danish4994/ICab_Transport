@@ -298,22 +298,22 @@
             <div class="row mx-md-5 text-white text-center py-5">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                     <i class="fa fa-calendar"></i>
-                    <h2>113</h2>
+                    <h2 class="count">113</h2>
                     <p>Events Done</p>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                     <i class="fa fa-globe"></i>
-                    <h2>75</h2>
+                    <h2 class="count">75</h2>
                     <p>Clients Worldwide</p>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                     <i class="fa fa-car"></i>
-                    <h2>521</h2>
+                    <h2 class="count">521</h2>
                     <p>Vehicles</p>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                     <i class="fa fa-users"></i>
-                    <h2>54</h2>
+                    <h2 class="count">54</h2>
                     <p>People in Team</p>
                 </div>
                 
@@ -725,6 +725,19 @@
     }
   </script>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+ integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" 
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+  integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('.count').counterUp({
+    delay: 10,
+    time: 1000
+});
+</script>
 </body>
 </html>
 
